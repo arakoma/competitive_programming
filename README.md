@@ -1,1 +1,1 @@
-# Codes of competitive proguramming
+# Codes of competitive programming

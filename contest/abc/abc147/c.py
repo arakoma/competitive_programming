@@ -15,17 +15,17 @@ for i in range(2 ** N):
         if (i >> j) & 1:
             h[j] = 1
     
-    flag = False
+    flag = True
     for i in range(N):
         if h[i] == 1:
             for x, y in xy[i]:
                 if h[x-1] != y:
-                    flag = True
+                    flag = False
                     break
-            if flag:
+            if not flag:
                 break
     
-    if not flag:
+    if flag:
         ans = max(ans, sum(h))
 
 print(ans)

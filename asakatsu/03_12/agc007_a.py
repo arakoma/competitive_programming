@@ -5,7 +5,7 @@ ans = "Impossible"
 
 cnt = 0
 for a in A:
-    cnt += A.count("#")
+    cnt += a.count("#")
 
 if cnt == H + W - 1:
     ans = "Possible"

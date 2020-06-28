@@ -34,7 +34,7 @@ for d, q in dq:
     value += - s[d][t[d]] + s[d][q]
 
     # dの前と後のq選択日のみ考えて、その間だけ修正する
-    # 変換前のt[d-1]のマイナス計算を直す
+    # 変換前のt[d]のマイナス計算を直す
     ind = held[t[d]].index(d)
     r = held[t[d]][ind+1]
     l = held[t[d]][ind-1]
